@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,13 +7,11 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
   </style>
 </head>
-
 <body class="bg-white text-gray-800">
+
   <!-- Header -->
   <header class="py-6 bg-blue-50 border-b">
     <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
@@ -23,13 +20,13 @@
       <nav id="menu" class="hidden md:flex space-x-4 md:space-x-6">
         <a href="#features" class="text-blue-700 font-medium hover:underline">Features</a>
         <a href="#pricing" class="text-blue-700 font-medium hover:underline">Pricing</a>
-        <a href="#cta" class="text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Get Started</a>
+        <a href="tel:+918693873316" class="text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">📞 Call Now</a>
       </nav>
     </div>
     <div id="mobile-menu" class="md:hidden hidden px-4 mt-4 space-y-2">
       <a href="#features" class="block text-blue-700 font-medium hover:underline">Features</a>
       <a href="#pricing" class="block text-blue-700 font-medium hover:underline">Pricing</a>
-      <a href="#cta" class="block bg-blue-600 text-white text-center py-2 rounded hover:bg-blue-700">Get Started</a>
+      <a href="tel:+918693873316" class="block bg-blue-600 text-white text-center py-2 rounded hover:bg-blue-700">📞 Call Now</a>
     </div>
   </header>
 
@@ -44,46 +41,54 @@
       <a href="#book" class="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50">👉 Book a Call</a>
     </div>
   </section>
-
   <!-- Features -->
   <section id="features" class="py-16 bg-gray-50" data-aos="fade-up">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
-      <div>
-        <div class="text-3xl mb-2">✅</div>
-        <h3 class="text-xl font-semibold">Country-wise HS codes & duties</h3>
-      </div>
-      <div>
-        <div class="text-3xl mb-2">📄</div>
-        <h3 class="text-xl font-semibold">Compliance docs checklist (FSSAI, BIS, DGFT)</h3>
-      </div>
-      <div>
-        <div class="text-3xl mb-2">🚢</div>
-        <h3 class="text-xl font-semibold">Best ports & shipping options</h3>
-      </div>
-      <div>
-        <div class="text-3xl mb-2">💸</div>
-        <h3 class="text-xl font-semibold">Incentives like RoDTEP & Duty Drawback</h3>
-      </div>
-      <div>
-        <div class="text-3xl mb-2">📈</div>
-        <h3 class="text-xl font-semibold">Real price trends & risk flags</h3>
-      </div>
-      <div>
-        <div class="text-3xl mb-2">🧠</div>
-        <h3 class="text-xl font-semibold">Backed by AI + human experts</h3>
-      </div>
+      <div><div class="text-3xl mb-2">✅</div><h3 class="text-xl font-semibold">Country-wise HS codes & duties</h3></div>
+      <div><div class="text-3xl mb-2">📄</div><h3 class="text-xl font-semibold">Compliance docs checklist (FSSAI, BIS, DGFT)</h3></div>
+      <div><div class="text-3xl mb-2">🚢</div><h3 class="text-xl font-semibold">Best ports & shipping options</h3></div>
+      <div><div class="text-3xl mb-2">💸</div><h3 class="text-xl font-semibold">Incentives like RoDTEP & Duty Drawback</h3></div>
+      <div><div class="text-3xl mb-2">📈</div><h3 class="text-xl font-semibold">Real price trends & risk flags</h3></div>
+      <div><div class="text-3xl mb-2">🧠</div><h3 class="text-xl font-semibold">Backed by AI + human experts</h3></div>
     </div>
   </section>
 
-  <!-- Positioning Pitch -->
-  <section class="py-20 bg-white px-4" data-aos="fade-up">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-blue-700 mb-4">Your Export-Import Compliance Desk in a Table</h2>
-      <p class="text-gray-700 text-lg mb-4">
-        ImpexReady simplifies complex trade data into actionable commodity intelligence — updated, localized, and human-reviewed — so small businesses can trade confidently, faster, and without mistakes.
-      </p>
-      <p class="font-medium text-gray-800">Built for Indian MSMEs, first-time exporters, and growing trade firms.</p>
-      <p class="text-sm text-gray-500 mt-2">Powered by AI, curated by humans, trusted by business.</p>
+  <!-- Sample Table Section -->
+  <section id="sample" class="py-20 bg-gray-100 px-4 text-center">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Get Your Free Sample Table</h2>
+      <p class="mb-6 text-gray-700">Enter your details and we’ll email you a free compliance snapshot for your product.</p>
+      <form id="sampleForm" class="grid gap-4 text-left">
+        <input type="text" id="name" placeholder="Your Name" class="border p-3 rounded w-full" required />
+        <input type="email" id="email" placeholder="Your Email" class="border p-3 rounded w-full" required />
+        <input type="text" id="product" placeholder="Your Product (e.g., Basmati Rice)" class="border p-3 rounded w-full" required />
+        <button type="submit" class="bg-blue-600 text-white py-3 rounded hover:bg-blue-700 w-full">Submit</button>
+      </form>
+      <p id="formMessage" class="mt-4 text-green-600 font-medium hidden">Thank you! Your sample will be emailed shortly.</p>
+    </div>
+  </section>
+  <!-- Book a Call Section -->
+  <section id="book" class="py-20 bg-white text-center px-4">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Book a Call With Our Trade Expert</h2>
+      <p class="mb-6 text-gray-600">Let’s discuss your product, target countries, and compliance questions.</p>
+      <!-- Calendly Inline Widget Start -->
+<div 
+  class="calendly-inline-widget" 
+  data-url="https://calendly.com/alokv05/15min" 
+  style="min-width:320px;height:700px;">
+</div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly Inline Widget End -->
+
+<!-- Optional: External Link Button -->
+<a 
+  href="https://calendly.com/alokv05/15min" 
+  target="_blank" 
+  class="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 mt-4">
+  Schedule via Calendly
+</a>
+      </a>
     </div>
   </section>
 
@@ -121,21 +126,43 @@
         <a href="#sample" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-100">👉 Get Free Sample Table</a>
         <a href="#book" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-100">👉 Book a Call</a>
       </div>
+      <p class="mt-4 text-white text-sm">Or call us now: <a href="tel:+918693873316" class="underline">+91 86938 73316</a></p>
     </div>
   </section>
-
-  <!-- AOS Script -->
+  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({ once: true });
 
     // Mobile menu toggle
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Google Sheet Form Submission
+    const form = document.getElementById('sampleForm');
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzd-CTLFRVZv1Jhe6PwZ7e39LF572GAQgDv5z3NpdWfhTIXB3f4t5W8Fn3bWU75tbS0NQ/exec';
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        product: document.getElementById('product').value
+      };
+      try {
+        await fetch(scriptURL, {
+          method: 'POST',
+          body: JSON.stringify(data),
+          headers: { 'Content-Type': 'application/json' }
+        });
+        form.reset();
+        document.getElementById('formMessage').classList.remove('hidden');
+      } catch (error) {
+        alert('Failed to submit. Try again.');
+        console.error('Error!', error.message);
+      }
     });
   </script>
 </body>
-
 </html>
